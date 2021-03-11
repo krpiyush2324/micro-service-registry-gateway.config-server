@@ -1,0 +1,26 @@
+ server:
+   port: 9291
+
+
+
+ spring:
+   application:
+     name: HYSTERIX-DASHBOARD
+
+#reading config from config server
+   config:
+     enable: true
+     uri: http://localhost:9192
+
+ hystrix:
+   dashboard:
+     proxy-stream-allow-list: "*"
+
+
+
+
+
+
+
+
+
