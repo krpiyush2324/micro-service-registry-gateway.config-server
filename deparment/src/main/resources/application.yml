@@ -1,0 +1,36 @@
+server:
+  port: 9001
+
+spring :
+  datasource:
+    url: jdbc:postgresql://localhost:5432/department
+    userName: postgres
+    password : postgres
+    driver-class-name: org.postgresql.Driver
+
+
+  application:
+    name: DEPARTMENT-SERVICE
+  cloud:
+    config:
+      enable: true
+      uri: http://localhost:9192
+
+  jpa:
+    hibernate:
+      ddl-auto : update
+    show-sql: true
+
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
+
+
+
+
+
+
+
+
+
+
